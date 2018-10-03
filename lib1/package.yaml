@@ -1,0 +1,14 @@
+name: lib1
+version: 0.2.0.0
+dependencies:
+  - base >= 4.8 && < 5
+library:
+  source-dirs: src
+  other-modules: []
+tests:
+  lib1-doctests:
+    main: Main.hs
+    source-dirs: test
+    dependencies:
+      - lib1
+      - lib2
